@@ -1,0 +1,15 @@
+.wholefirst{
+    padding: 5px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+
+    .dropbtn:hover{
+        background-color: orange;
+    }
+
+    .lgbtn:hover{
+        background-color: orange;
+    }
+
+}

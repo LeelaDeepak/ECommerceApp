@@ -1,0 +1,105 @@
+<app-first-nav></app-first-nav>
+<app-second-nav></app-second-nav>
+<main class="wholeView container-fluid">
+  <h1 class="text-center">View Products</h1>
+  <form class="d-flex m-3">
+    <input class="searchinput" placeholder="Search Your Product" />
+    <button class="btn btn-secondary searchbtn" type="submit">Search</button>
+  </form>
+  <div class="usropts d-flex justify-content-center align-items-center">
+    <button class="btn btn-outline-secondary w-25 m-2" (click)="changeval()">
+      Filter By
+    </button>
+    <div class="dropdown m-2">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Sort By
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Product Price</a></li>
+        <li><a class="dropdown-item" href="#">Product Rating</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center align-items-center mt-2">
+    <div *ngIf="showvalue; else normalview" class="d-flex">
+      <div class="col-lg-3">
+        <h2 class="text-center">Filter By</h2>
+        <div class="dropdown text-center mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Choose Product
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" (click)="getcar()">Car</a></li>
+            <li><a class="dropdown-item" (click)="getbike()">Bike</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div *ngIf="showcar && !showbike">
+          <app-viewcar></app-viewcar>
+        </div>
+        <div *ngIf="showbike && !showcar">
+          <app-viewbike></app-viewbike>
+        </div>
+        <div *ngIf="!showbike && !showcar">
+          <h2 class="text-center">Products Store</h2>
+          <div class="row">
+            <div
+              *ngFor="let item of shopitems"
+              class="col-lg-4 col-md-6 col-sm-12"
+            >
+              <div class="m-2">
+                <div class="card m-2">
+                  <img
+                    src="{{ item.imgUrl }}"
+                    class="card-img-top p-4"
+                    alt="Img"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title">
+                      <b>{{ item.name }}</b>
+                    </h5>
+                    <p class="lead">Category:{{ item.category }}</p>
+                    <p class="card-text">{{ item.price | currency }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #normalview>
+      <h2 class="text-center">Products Store</h2>
+      <div class="row">
+        <div *ngFor="let item of shopitems" class="col-lg-3 col-md-6 col-sm-12">
+          <div class="m-2">
+            <div class="card m-2">
+              <img src="{{ item.imgUrl }}" class="card-img-top p-4" alt="Img" />
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <b>{{ item.name }}</b>
+                </h5>
+                <p class="lead">Category:{{ item.category }}</p>
+                <p class="card-text">{{ item.price | currency }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</main>
+<app-footer></app-footer>

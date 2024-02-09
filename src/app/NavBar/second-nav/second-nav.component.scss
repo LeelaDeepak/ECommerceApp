@@ -1,0 +1,12 @@
+.wholesecondnav {
+  display: flex;
+  justify-content: space-between;
+  
+
+  .nav-item:hover {
+    background-color: orange;
+    border-radius: 10px;
+  }
+}
+
+
