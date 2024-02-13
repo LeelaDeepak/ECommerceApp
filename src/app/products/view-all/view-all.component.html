@@ -2,30 +2,29 @@
 <app-second-nav></app-second-nav>
 <main class="wholeView container-fluid">
   <h1 class="text-center">View Products</h1>
-  <form class="d-flex m-3">
-    <input class="searchinput" placeholder="Search Your Product" />
-    <button class="btn btn-secondary searchbtn" type="submit">Search</button>
-  </form>
+  <div *ngIf="!showvalue">
+    <form class="d-flex m-3">
+      <input
+        class="searchinput"
+        placeholder="Search Your Product"
+        [(ngModel)]="searchitem"
+        name="searchitem"
+      />
+      <button
+        class="btn btn-secondary searchbtn"
+        type="submit"
+        (click)="searchQuery()"
+      >
+        Search
+      </button>
+    </form>
+  </div>
   <div class="usropts d-flex justify-content-center align-items-center">
     <button class="btn btn-outline-secondary w-25 m-2" (click)="changeval()">
       Filter By
     </button>
-    <div class="dropdown m-2">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton1"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        Sort By
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">Product Price</a></li>
-        <li><a class="dropdown-item" href="#">Product Rating</a></li>
-      </ul>
-    </div>
   </div>
+
   <div class="row d-flex justify-content-center align-items-center mt-2">
     <div *ngIf="showvalue; else normalview" class="d-flex">
       <div class="col-lg-3">
@@ -37,6 +36,7 @@
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            (click)="showfilter()"
           >
             Choose Product
           </button>
@@ -44,6 +44,83 @@
             <li><a class="dropdown-item" (click)="getcar()">Car</a></li>
             <li><a class="dropdown-item" (click)="getbike()">Bike</a></li>
           </ul>
+        </div>
+
+        <h3 class="text-center mt-3">Ratings</h3>
+        <div class="d-flex justify-content-center align-items-center">
+          <button
+            type="button"
+            class="btn btn-outline-secondary m-2 p-2"
+            (click)="checkFourRating()"
+          >
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i> 4/5 Stars
+          </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <button
+            type="button"
+            class="btn btn-outline-secondary m-2 p-2"
+            (click)="checkThreeRating()"
+          >
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i> 3/5 Stars
+          </button>
+        </div>
+        <div
+          class="form-check d-flex justify-content-center align-items-center"
+        >
+          <button
+            type="button"
+            class="btn btn-outline-secondary m-2 p-2"
+            (click)="checkTwoRating()"
+          >
+            <i class="fa fa-star"></i><i class="fa fa-star"></i> 2/5 Stars
+          </button>
+        </div>
+
+        <h3 class="text-center mt-3">Price Range</h3>
+        <div
+          class="form-check d-flex justify-content-center align-items-center m-2"
+        >
+          <input
+            class="form-check-input m-1"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+            (click)="checkthousand()"
+          />
+          <label class="form-check-label" for="flexRadioDefault1">
+            1000$ to 2000$
+          </label>
+        </div>
+        <div
+          class="form-check d-flex justify-content-center align-items-center m-2"
+        >
+          <input
+            class="form-check-input m-1"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            (click)="checktwothousand()"
+          />
+          <label class="form-check-label" for="flexRadioDefault2">
+            2000$ to 3000$
+          </label>
+        </div>
+        <div
+          class="form-check d-flex justify-content-center align-items-center m-2"
+        >
+          <input
+            class="form-check-input m-1"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault4"
+            (click)="checkfivethousand()"
+          />
+          <label class="form-check-label" for="flexRadioDefault4">
+            5000$ and Above
+          </label>
         </div>
       </div>
       <div class="col-lg-9">
@@ -54,25 +131,69 @@
           <app-viewbike></app-viewbike>
         </div>
         <div *ngIf="!showbike && !showcar">
-          <h2 class="text-center">Products Store</h2>
-          <div class="row">
+          <div *ngIf="showfourRate">
+            <app-four-star></app-four-star>
+          </div>
+          <div *ngIf="showthreeRate">
+            <app-three-star></app-three-star>
+          </div>
+          <div *ngIf="showtwoRate">
+            <app-two-star></app-two-star>
+          </div>
+          <div *ngIf="!showfourRate && !showthreeRate && !showtwoRate">
+            <div *ngIf="showfromthousand">
+              <app-sortbythousand></app-sortbythousand>
+            </div>
+            <div *ngIf="showfromtwothousand">
+              <app-sortbytwothousand></app-sortbytwothousand>
+            </div>
+            <div *ngIf="showfromfivethousand">
+              <app-sortbyfivethousand></app-sortbyfivethousand>
+            </div>
             <div
-              *ngFor="let item of shopitems"
-              class="col-lg-4 col-md-6 col-sm-12"
+              *ngIf="
+                !showfromthousand &&
+                !showfromfivethousand &&
+                !showfromtwothousand
+              "
             >
-              <div class="m-2">
-                <div class="card m-2">
-                  <img
-                    src="{{ item.imgUrl }}"
-                    class="card-img-top p-4"
-                    alt="Img"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">
-                      <b>{{ item.name }}</b>
-                    </h5>
-                    <p class="lead">Category:{{ item.category }}</p>
-                    <p class="card-text">{{ item.price | currency }}</p>
+              <h2 class="text-center">Products Store</h2>
+              <div class="row">
+                <div
+                  *ngFor="let item of shopitems"
+                  class="col-lg-4 col-md-6 col-sm-12"
+                >
+                  <div class="m-2">
+                    <div class="card m-2">
+                      <img
+                        src="{{ item.imgUrl }}"
+                        class="card-img-top p-4"
+                        alt="Img"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title">
+                          <b>{{ item.name }}</b>
+                        </h5>
+                        <p class="lead">Category:{{ item.category }}</p>
+                        <p class="card-text">{{ item.price | currency }}</p>
+                        <p class="lead" *ngIf="item.rating == 4">
+                          Ranking: <i class="fa fa-star"></i
+                          ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                          ><i class="fa fa-star"></i>
+                        </p>
+                        <p class="lead" *ngIf="item.rating == 3">
+                          Ranking: <i class="fa fa-star"></i
+                          ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </p>
+                        <p class="lead" *ngIf="item.rating == 2">
+                          Ranking: <i class="fa fa-star"></i
+                          ><i class="fa fa-star"></i>
+                        </p>
+                        <p class="lead" *ngIf="item.rating == 1">
+                          Ranking: <i class="fa fa-star"></i>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -82,23 +203,88 @@
       </div>
     </div>
     <ng-template #normalview>
-      <h2 class="text-center">Products Store</h2>
-      <div class="row">
-        <div *ngFor="let item of shopitems" class="col-lg-3 col-md-6 col-sm-12">
-          <div class="m-2">
-            <div class="card m-2">
-              <img src="{{ item.imgUrl }}" class="card-img-top p-4" alt="Img" />
-              <div class="card-body text-center">
-                <h5 class="card-title">
-                  <b>{{ item.name }}</b>
-                </h5>
-                <p class="lead">Category:{{ item.category }}</p>
-                <p class="card-text">{{ item.price | currency }}</p>
+      <main class="text-center" *ngIf="!searchvalue; else nosearch">
+        <h2 class="text-center">Products Store</h2>
+        <div class="row">
+          <div
+            *ngFor="let item of shopitems"
+            class="col-lg-3 col-md-6 col-sm-12"
+          >
+            <div class="m-2">
+              <div class="card m-2">
+                <img
+                  src="{{ item.imgUrl }}"
+                  class="card-img-top p-4"
+                  alt="Img"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">
+                    <b>{{ item.name }}</b>
+                  </h5>
+                  <p class="lead">Category:{{ item.category }}</p>
+                  <p class="card-text">{{ item.price | currency }}</p>
+                  <p class="lead" *ngIf="item.rating == 4">
+                    Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 3">
+                    Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 2">
+                    Ranking: <i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 1">
+                    Ranking: <i class="fa fa-star"></i>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
+      <ng-template #nosearch>
+        <h2 class="text-center">Products Store</h2>
+        <div class="row justify-content-center align-items-center">
+          <div
+            *ngFor="let item of searchdata"
+            class="col-lg-3 col-md-6 col-sm-12"
+          >
+            <div class="m-2">
+              <div class="card m-2">
+                <img
+                  src="{{ item.imgUrl }}"
+                  class="card-img-top p-4"
+                  alt="Img"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">
+                    <b>{{ item.name }}</b>
+                  </h5>
+                  <p class="lead">Category:{{ item.category }}</p>
+                  <p class="card-text">{{ item.price | currency }}</p>
+                  <p class="lead" *ngIf="item.rating == 4">
+                    Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 3">
+                    Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 2">
+                    Ranking: <i class="fa fa-star"></i
+                    ><i class="fa fa-star"></i>
+                  </p>
+                  <p class="lead" *ngIf="item.rating == 1">
+                    Ranking: <i class="fa fa-star"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
     </ng-template>
   </div>
 </main>

@@ -1,0 +1,29 @@
+<h2 class="text-center">4 Rated Products</h2>
+<div class="row">
+    <div *ngFor="let item of fourRatedItems" class="col-lg-4 col-md-6 col-sm-12">
+      <div class="m-2">
+        <div class="card m-2">
+          <img src="{{ item.imgUrl }}" class="card-img-top p-4" alt="Img" />
+          <div class="card-body text-center">
+            <h5 class="card-title">
+              <b>{{ item.name }}</b>
+            </h5>
+            <p class="card-text">{{ item.price | currency }}</p>
+            <p class="lead" *ngIf="item.rating==4">Ranking:
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </p>
+            <p class="lead" *ngIf="item.rating==3">
+              Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </p>
+            <p class="lead" *ngIf="item.rating==2">
+              Ranking: <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </p>
+            <p class="lead" *ngIf="item.rating==1">
+              Ranking: <i class="fa fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

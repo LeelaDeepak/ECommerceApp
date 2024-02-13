@@ -3,5 +3,6 @@ export interface item{
     imgUrl:string,
     category:string,
     name:string,
-    price:number
+    price:number,
+    rating:number
 }

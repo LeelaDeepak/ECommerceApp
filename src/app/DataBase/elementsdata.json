@@ -1,359 +1,296 @@
 {
-    "All-Items":[
-        {
-            "id":1,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/600-102XD-007.JPG",
-            "category":"Bike",
-            "name":"4WD Components",
-            "price":3000
-        },
-        {
-            "id":2,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/674-694XD-007.jpg",
-            "category":"Car",
-            "name":"Exhaust Manifolds",
-            "price":3400
-        },
-        {
-            "id":3,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-715-007.JPG",
-            "category":"Bike",
-            "name":"ABS Modules",
-            "price":1000
-        },
-        {
-            "id":4,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/819-876-007.jpg",
-            "category":"Car",
-            "name":"Flexible Fuel Lines",
-            "price":9500
-        },
-        {
-            "id":5,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/949-099-007.JPG",
-            "category":"Bike",
-            "name":"Active Suspension",
-            "price":6000
-        },
-        {
-            "id":4,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/604-108-007.JPG",
-            "category":"Bike",
-            "name":"Air Door Actuators",
-            "price":9000
-        },
-        {
-            "id":5,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/90801-007.jpg",
-            "category":"Bike",
-            "name":"Builder Series",
-            "price":7000
-        },
-        {
-            "id":6,
-            "imgUrl":"https://static.dormanproducts.com/images/marketing/homepage/chassis-thumb.jpg",
-            "category":"Bike",
-            "name":"Chassis",
-            "price":2000
-        },
-        {
-            "id":7,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-211-007.JPG",
-            "category":"Bike",
-            "name":"Climate Control",
-            "price":8000
-        },
-        {
-            "id":8,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/590-260-007.JPG",
-            "category":"Bike",
-            "name":"Electronics",
-            "price":1000
-        },
-        {
-            "id":9,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-5954-007.JPG",
-            "category":"Bike",
-            "name":"DEF Modules",
-            "price":4500
-        },
-        {
-            "id":10,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/502-505-007.JPG",
-            "category":"Bike",
-            "name":"Diesel Tank Bunk",
-            "price":1200
-        },
-        {
-            "id":11,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/931-156-007.JPG",
-            "category":"Bike",
-            "name":"Door Actuators",
-            "price":9800
-        },
-        {
-            "id":12,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/938-067-007.JPG",
-            "category":"Bike",
-            "name":"Drive Shafts",
-            "price":2400
-        },
-        {
-            "id":13,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/674-694XD-007.jpg",
-            "category":"Car",
-            "name":"Exhaust Manifolds",
-            "price":3400
-        },
-        {
-            "id":14,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/819-876-007.jpg",
-            "category":"Car",
-            "name":"Flexible Fuel Lines",
-            "price":9500
-        },
-        {
-            "id":15,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/603-645-007.JPG",
-            "category":"Car",
-            "name":"Fluid Reservoirs",
-            "price":3400
-        },
-        {
-            "id":16,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/576-995-007.JPG",
-            "category":"Car",
-            "name":"Fuel Tanks",
-            "price":3200
-        },
-        {
-            "id":17,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/77136-001.JPG",
-            "category":"Car",
-            "name":"Handles",
-            "price":7000
-        },
-        {
-            "id":18,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/626-541-001.JPG",
-            "category":"Car",
-            "name":"Heater Hoses",
-            "price":9000
-        },
-        {
-            "id":19,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/587-000-007.JPG",
-            "category":"Car",
-            "name":"Hybrid Batteries",
-            "price":4000
-        },
-        {
-            "id":20,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/586-100-007.JPG",
-            "category":"Car",
-            "name":"Infotainment ",
-            "price":3500
-        },
-        {
-            "id":21,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/615-380-007.JPG",
-            "category":"Car",
-            "name":"Intake Manifolds",
-            "price":2500
-        },
-        {
-            "id":22,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/13745-007.JPG",
-            "category":"Car",
-            "name":"Keyless Remotes",
-            "price":1200
-        },
-        {
-            "id":23,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/22-1567HD-007.JPG",
-            "category":"Car",
-            "name":"Leaf Springs",
-            "price":4300
-        },
-        {
-            "id":24,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/926-270-007.JPG",
-            "category":"Car",
-            "name":"Loaded Plates",
-            "price":1300
-        }
-
-    ],
-    "Bike-Items":[
-        {
-            "id":1,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/600-102XD-007.JPG",
-            "category":"Bike",
-            "name":"4WD Components",
-            "price":3000
-        },
-        {
-            "id":2,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-715-007.JPG",
-            "category":"Bike",
-            "name":"ABS Modules",
-            "price":1000
-        },
-        {
-            "id":3,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/949-099-007.JPG",
-            "category":"Bike",
-            "name":"Active Suspension",
-            "price":6000
-        },
-        {
-            "id":4,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/604-108-007.JPG",
-            "category":"Bike",
-            "name":"Air Door Actuators",
-            "price":9000
-        },
-        {
-            "id":5,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/90801-007.jpg",
-            "category":"Bike",
-            "name":"Builder Series",
-            "price":7000
-        },
-        {
-            "id":6,
-            "imgUrl":"https://static.dormanproducts.com/images/marketing/homepage/chassis-thumb.jpg",
-            "category":"Bike",
-            "name":"Chassis",
-            "price":2000
-        },
-        {
-            "id":7,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-211-007.JPG",
-            "category":"Bike",
-            "name":"Climate Control ",
-            "price":8000
-        },
-        {
-            "id":8,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/590-260-007.JPG",
-            "category":"Bike",
-            "name":"Electronics",
-            "price":1000
-        },
-        {
-            "id":9,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/599-5954-007.JPG",
-            "category":"Bike",
-            "name":"DEF Modules",
-            "price":4500
-        },
-        {
-            "id":10,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/502-505-007.JPG",
-            "category":"Bike",
-            "name":"Diesel Tank Bunk",
-            "price":1200
-        },
-        {
-            "id":11,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/931-156-007.JPG",
-            "category":"Bike",
-            "name":"Door Actuators",
-            "price":9800
-        },
-        {
-            "id":12,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/938-067-007.JPG",
-            "category":"Bike",
-            "name":"Drive Shafts",
-            "price":2400
-        }
-    ],
-    "Car-Items":[
-        {
-            "id":1,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/674-694XD-007.jpg",
-            "category":"Car",
-            "name":"Exhaust Manifolds",
-            "price":3400
-        },
-        {
-            "id":2,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/819-876-007.jpg",
-            "category":"Car",
-            "name":"Flexible Fuel Lines",
-            "price":9500
-        },
-        {
-            "id":3,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/603-645-007.JPG",
-            "category":"Car",
-            "name":"Fluid Reservoirs",
-            "price":3400
-        },
-        {
-            "id":4,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/576-995-007.JPG",
-            "category":"Car",
-            "name":"Fuel Tanks",
-            "price":3200
-        },
-        {
-            "id":5,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/77136-001.JPG",
-            "category":"Car",
-            "name":"Handles",
-            "price":7000
-        },
-        {
-            "id":6,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/626-541-001.JPG",
-            "category":"Car",
-            "name":"Heater Hoses",
-            "price":9000
-        },
-        {
-            "id":7,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/587-000-007.JPG",
-            "category":"Car",
-            "name":"Hybrid Batteries",
-            "price":4000
-        },
-        {
-            "id":8,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/586-100-007.JPG",
-            "category":"Car",
-            "name":"Infotainment",
-            "price":3500
-        },
-        {
-            "id":9,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/615-380-007.JPG",
-            "category":"Car",
-            "name":"Intake Manifolds",
-            "price":2500
-        },
-        {
-            "id":10,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/13745-007.JPG",
-            "category":"Car",
-            "name":"Keyless Remotes",
-            "price":1200
-        },
-        {
-            "id":11,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/22-1567HD-007.JPG",
-            "category":"Car",
-            "name":"Leaf Springs",
-            "price":4300
-        },
-        {
-            "id":12,
-            "imgUrl":"https://static.dormanproducts.com/images/product/icon_nw/926-270-007.JPG",
-            "category":"Car",
-            "name":"Loaded Plates",
-            "price":1300
-        }
-    ]
+  "All-Items": [
+    {
+      "id": 1,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/600-102XD-007.JPG",
+      "category": "Bike",
+      "name": "4WD Components",
+      "price": 3700,
+      "rating":1
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/674-694XD-007.jpg",
+      "category": "Car",
+      "name": "Exhaust Manifolds",
+      "price": 3300,
+      "rating":2
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-715-007.JPG",
+      "category": "Bike",
+      "name": "ABS Modules",
+      "price": 2500,
+      "rating":3
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/819-876-007.jpg",
+      "category": "Car",
+      "name": "Flexible Fuel Lines",
+      "price": 9500,
+      "rating":4
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/949-099-007.JPG",
+      "category": "Bike",
+      "name": "Active Suspension",
+      "price": 6000,
+      "rating":1
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/603-645-007.JPG",
+      "category": "Car",
+      "name": "Fluid Reservoirs",
+      "price": 2000,
+      "rating":2
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/90801-007.jpg",
+      "category": "Bike",
+      "name": "Builder Series",
+      "price": 7000,
+      "rating":3
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/576-995-007.JPG",
+      "category": "Car",
+      "name": "Fuel Tanks",
+      "price": 3200,
+      "rating":4
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-211-007.JPG",
+      "category": "Bike",
+      "name": "Climate Control",
+      "price": 8000,
+      "rating":1
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/77136-001.JPG",
+      "category": "Car",
+      "name": "Handles",
+      "price": 7000,
+      "rating":1
+    },
+    {
+      "id": 11,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-5954-007.JPG",
+      "category": "Bike",
+      "name": "DEF Modules",
+      "price": 4500,
+      "rating":2
+    },
+    {
+      "id": 12,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/626-541-001.JPG",
+      "category": "Car",
+      "name": "Heater Hoses",
+      "price": 9000,
+      "rating":3
+    }
+  ],
+  "Bike-Items": [
+    {
+      "id": 1,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/600-102XD-007.JPG",
+      "category": "Bike",
+      "name": "4WD Components",
+      "price": 3000,
+      "rating":1
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-715-007.JPG",
+      "category": "Bike",
+      "name": "ABS Modules",
+      "price": 1000,
+      "rating":2
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/949-099-007.JPG",
+      "category": "Bike",
+      "name": "Active Suspension",
+      "price": 6000,
+      "rating":3
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/604-108-007.JPG",
+      "category": "Bike",
+      "name": "Air Door Actuators",
+      "price": 9000,
+      "rating":4
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/90801-007.jpg",
+      "category": "Bike",
+      "name": "Builder Series",
+      "price": 7000,
+      "rating":1
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://static.dormanproducts.com/images/marketing/homepage/chassis-thumb.jpg",
+      "category": "Bike",
+      "name": "Chassis",
+      "price": 2000,
+      "rating":2
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-211-007.JPG",
+      "category": "Bike",
+      "name": "Climate Control ",
+      "price": 8000,
+      "rating":3
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/590-260-007.JPG",
+      "category": "Bike",
+      "name": "Electronics",
+      "price": 1000,
+      "rating":4
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/599-5954-007.JPG",
+      "category": "Bike",
+      "name": "DEF Modules",
+      "price": 4500,
+      "rating":1
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/502-505-007.JPG",
+      "category": "Bike",
+      "name": "Diesel Tank Bunk",
+      "price": 1200,
+      "rating":2
+    },
+    {
+      "id": 11,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/931-156-007.JPG",
+      "category": "Bike",
+      "name": "Door Actuators",
+      "price": 9800,
+      "rating":3
+    },
+    {
+      "id": 12,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/938-067-007.JPG",
+      "category": "Bike",
+      "name": "Drive Shafts",
+      "price": 2400,
+      "rating":4
+    }
+  ],
+  "Car-Items": [
+    {
+      "id": 1,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/674-694XD-007.jpg",
+      "category": "Car",
+      "name": "Exhaust Manifolds",
+      "price": 3400,
+      "rating":1
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/819-876-007.jpg",
+      "category": "Car",
+      "name": "Flexible Fuel Lines",
+      "price": 9500,
+      "rating":2
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/603-645-007.JPG",
+      "category": "Car",
+      "name": "Fluid Reservoirs",
+      "price": 3400,
+      "rating":3
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/576-995-007.JPG",
+      "category": "Car",
+      "name": "Fuel Tanks",
+      "price": 3200,
+      "rating":4
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/77136-001.JPG",
+      "category": "Car",
+      "name": "Handles",
+      "price": 7000,
+      "rating":1
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/626-541-001.JPG",
+      "category": "Car",
+      "name": "Heater Hoses",
+      "price": 9000,
+      "rating":2
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/587-000-007.JPG",
+      "category": "Car",
+      "name": "Hybrid Batteries",
+      "price": 4000,
+      "rating":3
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/586-100-007.JPG",
+      "category": "Car",
+      "name": "Infotainment",
+      "price": 3500,
+      "rating":4
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/615-380-007.JPG",
+      "category": "Car",
+      "name": "Intake Manifolds",
+      "price": 2500,
+      "rating":1
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/13745-007.JPG",
+      "category": "Car",
+      "name": "Keyless Remotes",
+      "price": 1200,
+      "rating":2
+    },
+    {
+      "id": 11,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/22-1567HD-007.JPG",
+      "category": "Car",
+      "name": "Leaf Springs",
+      "price": 4300,
+      "rating":3
+    },
+    {
+      "id": 12,
+      "imgUrl": "https://static.dormanproducts.com/images/product/icon_nw/926-270-007.JPG",
+      "category": "Car",
+      "name": "Loaded Plates",
+      "price": 1300,
+      "rating":4
+    }
+  ]
 }

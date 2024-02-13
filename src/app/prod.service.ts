@@ -22,5 +22,28 @@ export class ProdService {
     return this.http.get<item[]>('http://localhost:3000/Car-Items');
   }
 
+  searchAllProd(query:String){
+    return this.http.get(`http://localhost:3000/All-Items?name=${query}`);
+  }
+
+  fourRatedProd(){
+    return this.http.get('http://localhost:3000/All-Items?rating=4');
+  }
+
+  threeRatedProd(){
+    return this.http.get('http://localhost:3000/All-Items?rating=3');
+  }
+
+  twoRatedProd(){
+    return this.http.get('http://localhost:3000/All-Items?rating=2');
+  }
+
+  getwithlitmit(min:number,max:number){
+    return this.http.get(`http://localhost:3000/All-Items?price_gte=${min}&price_lte=${max}`);
+  }
+
+  getAbove(limit:number) {
+    return this.http.get(`http://localhost:3000/All-Items?price_gte=${limit}`);
+  }
 
 }
